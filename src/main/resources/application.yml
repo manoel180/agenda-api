@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    password: root
+    url: jdbc:mysql://localhost:3306/Creathus
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  liquibase:
+      changeLog: classpath:db/changelog/db.changelog-master.xml   
